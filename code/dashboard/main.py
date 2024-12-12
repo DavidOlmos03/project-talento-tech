@@ -1,11 +1,19 @@
 import streamlit as st
 from views import home, upload_data, data_visualization, statistical_analysis, machine_learning, bibliography
 import matplotlib.pyplot as plt
+import utils.menu as util
+
+#Página de presentación
+st.set_page_config(
+    page_title="Data Science Project - Wind Rose Prediction",
+    page_icon=":tornado:",
+    initial_sidebar_state='expanded',
+    layout="wide"
+)
 
 def main():
-    # Set page configuration
-    st.set_page_config(page_title="Responsive Menu for Data Analysis", layout="wide")
-
+    #llamamos a las otras páginas   
+    util.generarMenu()
     # Define the menu options
     menu_options = {
         "Home": home.render,

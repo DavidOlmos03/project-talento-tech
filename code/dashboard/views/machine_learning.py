@@ -23,10 +23,10 @@ def render():
                 st.subheader(f"Processing file {idx + 1}: {filename}")
                 wind_rose_image = wind_rose(data)
                 if wind_rose_image is None:
-                    st.error(f"Error: La visualización Wind Rose Real no se generó correctamente para {filename}.")
+                    st.error(f"Error: Wind Rose Real visualization failed for {filename}.")
                     continue
                 
-                with st.spinner("Generando predicciones. Esto puede tardar unos momentos..."):
+                with st.spinner("Generating predictions. This may take a few moments..."):
                     direccion_pred, velocidad_pred = predict_wind_rose_model(data)
                     if direccion_pred is None or velocidad_pred is None:
                         st.error(f"Error: La predicción del modelo falló para {filename}.")
@@ -34,7 +34,7 @@ def render():
                     
                     predict_wind_rose_image = predict_wind_rose(direccion_pred, velocidad_pred)
                     if predict_wind_rose_image is None:
-                        st.error(f"Error: La visualización de la predicción no se generó correctamente para {filename}.")
+                        st.error(f"Error: Prediction visualization failed for {filename}.")
                         continue
                 
                 # Save the result in the session_state

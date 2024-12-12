@@ -32,6 +32,23 @@ def render():
         Use this platform to explore insights from your data and leverage advanced predictive models to make informed decisions.
         """
     )
+    st.subheader("Data Interpretation")
+    st.write("Spanish")
+    st.write("""
+    Una rosa de vientos es una representación gráfica que muestra la distribución de la dirección y velocidad del viento. 
+    - **Dirección**: Cada sector circular representa una dirección (N, NE, E, etc.) desde donde sopla el viento.
+    - **Velocidad**: Los colores indican rangos de velocidad del viento según la leyenda.
+    - **Interpretación**: La longitud de las barras muestra la frecuencia o intensidad del viento desde cada dirección. Por ejemplo, barras largas con colores claros indican vientos frecuentes y fuertes.
+    """, unsafe_allow_html=True)
+
+    st.write("English")
+    st.write("""
+    A wind rose is a graphical representation that shows the distribution of wind direction and speed. 
+    - **Direction**: Each circular sector represents a direction (N, NE, E, etc.) from where the wind blows.
+    - **Speed**: The colors indicate ranges of wind speed based on the legend.
+    - **Interpretation**: The length of the bars shows the frequency or intensity of wind from each direction. For example, long bars with clear colors indicate frequent and strong winds. 
+    """, unsafe_allow_html=True)
+
 
     # Add a call-to-action or navigation suggestion
     st.markdown(
