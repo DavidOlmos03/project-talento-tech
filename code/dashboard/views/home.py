@@ -13,7 +13,7 @@ def render():
     with col2:
         st.image(image_path_2, width=300, use_container_width=False)
     # Add a title for the project
-    st.title("Data Science Project")
+    st.title("Data Science Project - Wind Rose Prediction")
 
     # Add a description of the project
     st.write(
