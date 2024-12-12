@@ -23,14 +23,28 @@ def render():
 
     st.markdown(google_drive_button, unsafe_allow_html=True)
 
-
+    st.write("---------------------------------------------------------------")
 
     st.write(
         """
         <br>
-        [2] Wind Rose Prediction: Ingénieria de la Energía Eólica.<br> 
+        [2] <b>Ingénieria de la Energía Eólica.</b><br>
         Villarrubia, M. (2013). <br>
         Facultad de Física - Universidad de Barcelona. <br>
         """,
         unsafe_allow_html=True
     )
+
+    st.write("---------------------------------------------------------------")
+
+    # gitHub repository Saul Montoya
+    st.write("""
+    [3] <b> GitHub Repository - Saul Montoya </b><br>
+    This repository have a tutorial to create a Wind Rose with Python.<br>
+    **Link to the repository:** [SaulMontoya/Tutorial-para-realizar-una-Rosa-de-Vientos-con-Python](https://github.com/SaulMontoya/Tutorial-para-realizar-una-Rosa-de-Vientos-con-Python)
+    """, unsafe_allow_html=True)
+
+    # Create a button to open the GitHub repository
+    if st.button('Go to GitHub Repository'):
+        st.write("Opening GitHub Repository...")
+        st.write("[![GitHub](https://img.shields.io/badge/View%20on-GitHub-black?logo=github&logoColor=white)](https://github.com/SaulMontoya/Tutorial-para-realizar-una-Rosa-de-Vientos-con-Python/blob/master/Rosa%20de%20Vientos.ipynb)")
