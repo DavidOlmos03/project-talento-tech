@@ -1,5 +1,5 @@
 import streamlit as st
-from views import home, upload_data, data_visualization, statistical_analysis, machine_learning
+from views import home, upload_data, data_visualization, statistical_analysis, machine_learning, bibliography
 import matplotlib.pyplot as plt
 
 def main():
@@ -8,11 +8,12 @@ def main():
 
     # Define the menu options
     menu_options = {
-        "Home": home.render,
+        "Home": home.home,
         "Upload Data": upload_data.render,
         "Data Visualization": data_visualization.render,
         "Statistical Analysis": statistical_analysis.render,
         "Machine Learning": machine_learning.render,
+        "Bibliography": bibliography.bibliography,
     }
 
     # Sidebar menu
