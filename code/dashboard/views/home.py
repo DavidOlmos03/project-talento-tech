@@ -5,7 +5,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 image_path_1 = os.path.join(current_dir, "../imgs/energy_renewable_logo.png")
 image_path_2 = os.path.join(current_dir, "../imgs/tech_logo.png")
 
-def home():
+def render():
     col1, col2 = st.columns(2)
     with col1:
         # Display the project logo at the top center of the page

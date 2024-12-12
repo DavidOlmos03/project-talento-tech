@@ -1,6 +1,6 @@
 import streamlit as st
 
-def bibliography():
+def render():
     st.title("Bibliography")
     st.write(
         """

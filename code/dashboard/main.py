@@ -8,12 +8,12 @@ def main():
 
     # Define the menu options
     menu_options = {
-        "Home": home.home,
+        "Home": home.render,
         "Upload Data": upload_data.render,
         "Data Visualization": data_visualization.render,
         "Statistical Analysis": statistical_analysis.render,
         "Machine Learning": machine_learning.render,
-        "Bibliography": bibliography.bibliography,
+        "Bibliography": bibliography.render,
     }
 
     # Sidebar menu
